@@ -141,3 +141,38 @@ h1 {
     border: 1px solid var(--vidro);
     border-radius: 16px;
 }
+
+.campo-form {
+width: 100%;
+padding: 1rem;
+background: rgba(255, 255,  255, 0.05);
+border-radius: 8px;
+color: var(--claro);
+border: 1px solid var(--vidro);
+outline: none;
+}
+
+.campo-form:focus {
+    border-color: var(--secundaria);
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+}
+
+.grupo-form  {
+    margin-bottom: 1.5rem;
+}
+
+.botao-form {
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+}
+
+.botao-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
