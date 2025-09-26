@@ -10,7 +10,8 @@ function enviarWhats(e) {
 
     const url = `https://wa.me/${telefone}?text=${msgFormatada}`
 
-    console.log(url)
-
     window.open(url, '_blank')
+
+    e.target.reset()
+ 
 }
