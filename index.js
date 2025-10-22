@@ -3,7 +3,7 @@ function enviarWhats(e) {
 
     const nome = document.getElementById('nome').value
     const mensagem = document.getElementById('mensagem').value
-    const telefone = '11941706727'
+    const telefone = '5511941706727'
 
     const texto = `Olá! Me chamo ${nome}, ${mensagem}`
     const msgFormatada = encodeURIComponent(texto)
