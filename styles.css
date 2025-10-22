@@ -259,17 +259,24 @@ h1 {
 }
 
 .sobre-imagem-container {
-    display: flex; /* faz as imagens ficarem lado a lado */
-    flex-wrap: wrap; /* quebra para a linha de baixo se não couber */
-    justify-content: center; /* centraliza horizontalmente */
-    gap: 20px; /* espaçamento entre as imagens */
+    display: flex;
+    /* faz as imagens ficarem lado a lado */
+    flex-wrap: wrap;
+    /* quebra para a linha de baixo se não couber */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    gap: 20px;
+    /* espaçamento entre as imagens */
     margin-top: 20px;
 }
 
 .sobre-imagem {
-    width: 300px; /* largura fixa */
-    height: 280px; /* altura proporcional */
-    object-fit: cover; /* mantém proporção sem distorcer */
+    width: 300px;
+    /* largura fixa */
+    height: 280px;
+    /* altura proporcional */
+    object-fit: cover;
+    /* mantém proporção sem distorcer */
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -283,14 +290,45 @@ h1 {
 /* Responsivo */
 @media (max-width: 768px) {
     .sobre-imagem {
-        width: 45%; /* 2 imagens por linha */
+        width: 45%;
+        /* 2 imagens por linha */
         height: auto;
     }
 }
 
 @media (max-width: 480px) {
     .sobre-imagem {
-        width: 90%; /* 1 imagem por linha */
+        width: 90%;
+        /* 1 imagem por linha */
         height: auto;
     }
+}
+
+.footer {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding: 30px 0;
+    background-color: transparent;
+    /* cor de fundo opcional */
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin-top: 10px;
+}
+
+.github-link:hover {
+    transform: scale(1.2);
+    /* aumenta o ícone levemente */
+    filter: brightness(1.2);
+    /* efeito de claridade */
+}
+
+.github-icon {
+    width: 40px;
+    /* tamanho do ícone */
+    height: 40px;
+    margin-left: 10px;
 }
