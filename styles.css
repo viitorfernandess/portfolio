@@ -77,8 +77,8 @@ body {
 }
 
 .foto-perfil {
-    width: 325px;
-    height: 325px;
+    width: 310px;
+    height: 290px;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
     border: 4px solid var(--vidro);
@@ -128,12 +128,10 @@ h1 {
 }
 
 .projetos-caixa {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-
 }
 
 .projetos-card {
@@ -144,6 +142,7 @@ h1 {
     overflow: hidden;
     transition: all 0.5s ease;
     cursor: pointer;
+    width: 320px;
 }
 
 .projetos-titulo {
@@ -158,10 +157,10 @@ h1 {
 }
 
 .projetos-imagem {
-    height: 200px;
     width: 100%;
+    height: 180px;
     object-fit: cover;
-
+    display: block;
 }
 
 .info-projetos {
